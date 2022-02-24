@@ -4,7 +4,7 @@ native LSP client, a la Visual Studio Code.
 
 When setup, `lsp-project` will apply settings located in files named
 `.lspconfig.json` in the current working directory and its parent directories.
-[Here](https://github.com/woofdoggo/blob/main/.lspconfig.json) is an example.
+[Here](.lspconfig.json) is an example.
 
 ## Installation
 Install as you usually would with your plugin manager of choice. `lsp-project`
