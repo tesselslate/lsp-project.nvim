@@ -27,7 +27,6 @@ setup in your Neovim configuration. You can check the
 local lsp_project = require("lsp-project")
 
 lsp_project.setup({
-    cache = true,
     scan_depth = 10
 })
 ```
@@ -60,11 +59,6 @@ the options do:
 local lsp_project = require("lsp-project")
 
 lsp_project.setup({
-    -- Whether or not to cache per-project LSP settings.
-    -- Enabling this may result in issues if you are
-    -- frequently changing per-project settings.
-    cache = true,
-
     -- How many folders to scan backwards for per-project
     -- settings.
     -- If set to 1, it will only scan the current directory.
@@ -72,10 +66,6 @@ lsp_project.setup({
     scan_depth = 1,
 })
 ```
-
-> **Note:** If enabled, the cache will not refresh until you either restart
-Neovim or run the `LsprojInvalCache` command. The new project settings will
-take effect when you open new files.
 
 When setting up your language servers, you must wrap your `on_init` function
 with `lsp-project`. Here is a short example you can follow if you are using
